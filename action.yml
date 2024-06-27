@@ -11,3 +11,5 @@ runs:
     - name: Execute test
       run: npm run ${{ inputs.test-name }}
       shell: bash
+      env:
+        FORCE_COLOR: '1'
