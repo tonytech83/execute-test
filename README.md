@@ -1,0 +1,1 @@
+Simple custom GitHub action for execution of Unit and UI tests.

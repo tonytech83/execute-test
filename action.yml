@@ -1,0 +1,13 @@
+---
+name: Execute test
+description: 'Execute provided test'
+inputs:
+  test-name:
+    description: Name of the test for execution
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Execute test
+      run: npm run ${{ inputs.test-name }}
+      shell: bash
